@@ -1,0 +1,65 @@
+.cabecalho{
+    background-color: $cor-secundaria;
+    background: linear-gradient(90deg,#eb5757,#5778eb);
+}
+
+.cabecalho__topo{
+    display: flex;
+}
+
+.icone-menu{
+    padding: 1em;
+
+    @media (min-width: 900px){
+        display: none;
+    }
+}
+
+.titulo-site{
+    color: white;
+    padding: 1em;
+
+    @media (min-width: 900px){
+        padding-left: 0.5em;
+    }
+}
+
+.titulo-site--destaque{
+    font-size: 1.8em;
+    display: block;
+}
+
+.menu{
+    display: none;
+    background-color: #C2C2C2;
+
+    @media (min-width: 900px) {
+        display: block;
+    }
+
+    ul {
+        list-style: none;
+
+        @media (min-width: 900px) {
+            display: flex;
+        }
+    }
+}
+
+.menu__item{
+    a{
+        color: #000;
+        text-decoration: none;
+        display: block;
+        padding: 0.5em 1.5em;
+        border: 0;
+
+        @media (min-width: 900px){
+            font-size: 0.8em;
+        }
+
+        &:hover{
+            background-color: rgb(226, 224, 224);
+        }
+    }
+}

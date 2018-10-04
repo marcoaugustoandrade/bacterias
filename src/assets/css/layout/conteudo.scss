@@ -1,0 +1,82 @@
+.conteudo{
+    padding: 0.8em;
+}
+
+.conteudo__bloco {
+    
+    h2{
+        text-align: center;
+        text-transform: uppercase;
+        margin: 1em 0;
+        padding: 0.3em 0;
+        border-bottom: 0.15em solid $cor-auxiliar;
+
+        @media (min-width: 900px){
+            margin-top: 2.3em;
+        }
+    }
+    p{
+        line-height: 1.6;
+    }
+}
+
+.imagens{
+    @media (min-width: 900px){
+        display: flex;
+
+        figure{
+            flex-basis: 50%;
+            flex-grow: 0;
+        }
+        figure:first-of-type{
+            padding-right: 0.5em;
+        }
+        
+    }
+}
+.imagem-conteudo{
+    
+  img{
+    display: block;
+    margin: 1em auto; 
+  }
+}
+
+.formulario{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.formulario__texto{
+    border: 0;
+    border-bottom: 0.03em solid #000;
+    text-align: center;
+    margin: 0.3em 0;
+    font-size: 2em;
+    width: 100%;
+    outline: none;
+
+
+    &::selection{
+      color: #FFF;
+      background-color: $cor-auxiliar;
+    }
+}
+
+.formulario__botao{
+    border: 0;
+    background-color: $cor-auxiliar;
+    color: #FFF;
+    border-radius: 0.3em;
+    padding: 1em;
+    margin: 0.3em 0;
+    width: 6em;
+}
+
+.imagem-conteudo{
+
+    figcaption{
+        font-size: 0.8em;
+    }
+}
