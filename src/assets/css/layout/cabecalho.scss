@@ -1,6 +1,7 @@
 .cabecalho{
-    background-color: $cor-secundaria;
-    background: linear-gradient(90deg,#eb5757,#5778eb);
+    background-image: linear-gradient(90deg, rgba($cor-secundaria,0.7) 0%,rgba($cor-primaria,0.7) 100%), url('../images/virus-1812092.jpeg');
+    background-position: center;
+    background-size: cover;
 }
 
 .cabecalho__topo{
@@ -20,7 +21,7 @@
     padding: 1em;
 
     @media (min-width: 900px){
-        padding-left: 0.5em;
+        padding-left: 0.1em;
     }
 }
 
@@ -56,10 +57,12 @@
 
         @media (min-width: 900px){
             font-size: 0.8em;
+            padding-left: 0;
         }
 
         &:hover{
-            background-color: rgb(226, 224, 224);
+            /*background-color: rgb(226, 224, 224);*/
+            text-decoration: underline;
         }
     }
 }
